@@ -29,6 +29,6 @@ install:
 # otherwise their BaseReader subclasses will be loaded by pelican.readers.Readers,
 # and override the default .md one.
 # We also need to exclude the image_process & multi_neighbors as long as they are not fixed, cf. https://github.com/getpelican/pelican-plugins/issues/1170
-script: nosetests --with-summary-report
-   --exclude-dir=multimarkdown_reader --exclude-dir=pandoc_reader
-   --exclude-dir=image_process --exclude-dir=multi_neighbors
+script: pytest
+   --ignore=multimarkdown_reader --ignore=pandoc_reader
+   --ignore=image_process --ignore=multi_neighbors

@@ -1,4 +1,5 @@
 Markdown
-nose
-nose-exclude
-nose-summary-report
+pytest
+
+# Dependencies that should be in submodules requirements.txt files - cf. https://github.com/getpelican/pelican-plugins/issues/1170
+pycrypto
